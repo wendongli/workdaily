@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+
+	<deploy>
+		<!-- src="webroot" is a default value for Jetty -->
+		<!-- please use src="jndi:/localhost/" instead  of it for JBoss or Tomcat -->
+		<mapping src="webroot"  dest="src/main/webapp"></mapping>
+		<mapping src="mvctest"  dest="target/classes"></mapping>
+	</deploy>
+
+	<plugins>
+		<plugin name="spring_plugin">
+		</plugin>
+		<plugin name="ibatis_plugin">
+		</plugin>
+		<plugin name="webx3_plugin">
+		</plugin>
+		<plugin name="webx2_plugin">
+		</plugin>
+		<!-- please enabled aspectj_plugin when Spring doesn't work with AspectJ 1.5.4. -->
+		<!--
+		<plugin name="aspectj_plugin">
+		</plugin>
+		-->
+	</plugins>
+
+</workspace>
